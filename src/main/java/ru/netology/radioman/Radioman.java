@@ -2,12 +2,12 @@ package ru.netology.radioman;
 
 public class Radioman {
 
-    public int currentStation;
-    public int currentVolume;
-    int minStation = 0;
-    int maxStation = 9;
-    int minVolume = 0;
-    int maxVolume = 10;
+    private int currentStation;
+    private int currentVolume;
+    private final int minStation = 0;
+    private final int maxStation = 9;
+    private final int minVolume = 0;
+    private final int maxVolume = 10;
 
     public int getCurrentStation() {
         return currentStation;

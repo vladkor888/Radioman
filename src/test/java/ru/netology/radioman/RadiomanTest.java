@@ -9,7 +9,6 @@ class RadiomanTest {
     @Test
     void setCurrentStation() {
         Radioman radio = new Radioman();
-        radio.currentStation = 5;
         radio.setCurrentStation(7);
 
         int expected = 7;
@@ -21,10 +20,10 @@ class RadiomanTest {
     @Test
     void setCurrentStation1() {
         Radioman radio = new Radioman();
-        radio.currentStation = 5;
+
         radio.setCurrentStation(-2);
 
-        int expected = 5;
+        int expected = 0;
         int actual = radio.getCurrentStation();
 
         assertEquals(expected, actual);
@@ -33,10 +32,9 @@ class RadiomanTest {
     @Test
     void setCurrentStation2() {
         Radioman radio = new Radioman();
-        radio.currentStation = 5;
         radio.setCurrentStation(12);
 
-        int expected = 5;
+        int expected = 0;
         int actual = radio.getCurrentStation();
 
         assertEquals(expected, actual);
@@ -45,7 +43,6 @@ class RadiomanTest {
     @Test
     void setCurrentVolume() {
         Radioman radio = new Radioman();
-        radio.currentVolume = 5;
         radio.setCurrentVolume(7);
 
         int expected = 7;
