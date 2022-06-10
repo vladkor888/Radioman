@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class RadiomanTest {
 
     @Test
+    public void test() {
+        Radioman radio = new Radioman(20);
+    }
+
+    @Test
     void setCurrentStation() {
         Radioman radio = new Radioman();
         radio.setCurrentStation(7);
@@ -114,10 +119,10 @@ class RadiomanTest {
     @Test
     void nextVolume1() {
         Radioman radio = new Radioman();
-        radio.setCurrentVolume(10);
+        radio.setCurrentVolume(100);
         radio.nextVolume();
 
-        int expected = 10;
+        int expected = 100;
         int actual = radio.getCurrentVolume();
 
         assertEquals(expected, actual);
