@@ -4,16 +4,26 @@ public class Radioman {
 
     private int currentStation;
     private int currentVolume;
-    private final int minStation = 0;
-    private final int maxStation = 9;
-    private final int minVolume = 0;
-    private final int maxVolume = 10;
+    private int minStation;
+    private int maxStation = 9;
+    private int minVolume;
+    private final int maxVolume = 100;
+    private int sumStation;
+
+    public Radioman(int sumStation) {
+       this.maxStation = sumStation - 1;
+    }
+    public Radioman() {
+
+    }
 
     public int getCurrentStation() {
+
         return currentStation;
     }
 
     public int getCurrentVolume() {
+
         return  currentVolume;
     }
 
